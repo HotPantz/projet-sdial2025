@@ -1,3 +1,9 @@
 module-info.class
+com/projetsdial2025/logic/ResourceManager.class
+com/projetsdial2025/model/Salle.class
+com/projetsdial2025/interfaces/IResourceManager.class
 com/projetsdial2025/SystemInfo.class
+com/projetsdial2025/model/Reservation.class
 com/projetsdial2025/App.class
+com/projetsdial2025/model/Creneau.class
+com/projetsdial2025/model/Personne.class
