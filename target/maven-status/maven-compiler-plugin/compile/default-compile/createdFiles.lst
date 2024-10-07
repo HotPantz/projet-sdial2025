@@ -1,6 +1,3 @@
-com/projetsdial/model/Salle.class
-com/projetsdial/model/Creneau.class
-com/projetsdial/model/Personne.class
-com/projetsdial/controller/MainController.class
-com/projetsdial/App.class
-com/projetsdial/model/Reservation.class
+module-info.class
+com/projetsdial2025/SystemInfo.class
+com/projetsdial2025/App.class
