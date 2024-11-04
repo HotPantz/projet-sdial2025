@@ -1,8 +1,8 @@
-# Projet SDIAL 2025 - Gestion des Ressources en Java/JavaFX
+# Projet SDIAL 2025 - Gestion des Ressources en Java/Swing
 
 ## Description
 
-Ce projet fait partie du cours d'**Architecture Logicielle** dans le cadre de l'année 2025. Il s'agit d'une application Java développée avec **JavaFX** qui permet la gestion des ressources (salles, personnes, créneaux, et réservations) au sein d'une organisation.
+Ce projet fait partie du cours d'**Architecture Logicielle** dans le cadre de l'année 2025. Il s'agit d'une application Java développée avec **Swing** qui permet la gestion des ressources (salles, personnes, créneaux, et réservations) au sein d'une organisation.
 
 L'application implémente les **exigences fonctionnelles liées aux ressources** définies dans le cahier des charges. Elle permet de :
 - Créer et supprimer des salles, des personnes, et des créneaux temporels.
@@ -15,7 +15,6 @@ L'application implémente les **exigences fonctionnelles liées aux ressources**
 - **Gestion des personnes** : Ajout, suppression de personnes.
 - **Gestion des créneaux temporels** : Ajout, suppression, modification des créneaux.
 - **Gestion des réservations** : Créer, modifier, et supprimer des réservations associant une personne, une salle, et un créneau temporel.
-- **Gestion des créneaux multiples** : Créer des réservations sur plusieurs créneaux simultanément.
 
 ## Exigences non fonctionnelles
 
@@ -27,16 +26,17 @@ L'application implémente les **exigences fonctionnelles liées aux ressources**
 ## Technologies utilisées
 
 - **Java 21**
-- **JavaFX** pour l'interface graphique
+- **Swing** pour l'interface graphique
 - **Maven** pour la gestion des dépendances
 - **GIT** pour la gestion du versionnement
 - **UML** pour la modélisation des composants et de l'architecture
+- **XAMPP** pour la configuration de la base de données via phpMyAdmin
 
 ## Prérequis
 
 - **Java 21** doit être installé sur votre machine. Téléchargez-le [ici](https://www.oracle.com/java/technologies/javase-jdk21-downloads.html).
-- **Maven** doit être installé pour la compilation et la gestion des dépendances. Instructions d'installation [ici](https://maven.apache.org/install.html).
-- Un environnement compatible avec **JavaFX** (JavaFX SDK).
+- **Maven** doit être installé pour la gestion des dépendances. Instructions d'installation [ici](https://maven.apache.org/install.html).
+- **XAMPP** doit être installé pour faire fonctionner Apache et MySQL. Téléchargez-le [ici](https://www.apachefriends.org/index.html).
 
 ## Installation
 
@@ -44,15 +44,12 @@ L'application implémente les **exigences fonctionnelles liées aux ressources**
     ```bash
     git clone https://github.com/HotPantz/projet-sdial2025.git
     ```
-2. Accédez au dossier du projet :
-    ```bash
-    cd projet-sdial2025
-    ```
-3. Compilez et exécutez le projet avec Maven :
-    ```bash
-    mvn clean install
-    mvn javafx:run
-    ```
+3. Ouvrez le projet dans **Eclipse**.
+
+## Lancement de l'application
+
+1. Lancez Apache et MySQL via **XAMPP**.
+2. Exécutez le projet depuis **Eclipse**.
 
 ## Utilisation
 
@@ -65,15 +62,11 @@ L'application offre une interface utilisateur simple pour gérer les ressources.
 L'architecture suit un modèle **client-serveur**, où l'IHM (côté client) communique avec le serveur via des interfaces Java, exposant les fonctionnalités métier. L'application est divisée en plusieurs packages :
 - `ihm` : contient les classes liées à l'interface graphique.
 - `model` : contient les classes métier (salles, personnes, créneaux, réservations).
-- `application` : contient le point d'entrée principal du programme.
+- `api` : contient le point d'entrée principal du programme.
 
 ## Contributeurs
 
+- **OURAGHENE Sami**
 - **KABLIA Selyan**
 - **LESTRADE NATHAN**
 - **MANSOUR Asma**
-- **OURAGHENE Sami**
-
-## License
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
